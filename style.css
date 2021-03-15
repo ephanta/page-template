@@ -1,0 +1,40 @@
+h1,
+h2,
+h3,
+p,
+label,
+input,
+textarea {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0 35px;
+}
+
+label,
+input,
+textarea {
+  font-size: 20px;
+}
+
+.label {
+  font-size: 22px;
+}
+
+.answer {
+  font-size: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 11% 13% 11% 26% 28% 11%;
+  height: 90vh;
+}
+
+.left {
+  margin-left: 23%;
+}
