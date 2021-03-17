@@ -8,23 +8,42 @@
     <h1>Formular</h1>
     <div class="grid">
       <div class="left">
-        <form>
+        <form id="form">
           <div class="gender">
             <p class="label">Geschlecht</p>
-            <input type="radio" id="male" name="gender" value="male" />
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="Männlich"
+              required
+            />
             <label for="male">Männlich</label>
-            <input type="radio" id="female" name="gender" value="female" />
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="Weiblich"
+              required
+            />
             <label for="female">Weiblich</label>
-            <input type="radio" id="other" name="gender" value="other" />
+            <input
+              type="radio"
+              id="other"
+              name="gender"
+              value="Divers"
+              required
+            />
             <label for="other">Divers</label>
           </div>
           <div class="name">
             <p class="label">Name</p>
-            <input type="text" name="name" />
+            <input type="text" name="name" required />
           </div>
           <div class="birthdate">
             <p class="label">Geburtsdatum</p>
-            <select name="day" id="day">
+            <select name="day" id="day" required>
+              <option value="" disabled selected>Tag</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -57,7 +76,8 @@
               <option value="30">30</option>
               <option value="31">31</option>
             </select>
-            <select name="month" id="month">
+            <select name="month" id="month" required>
+              <option value="" disabled selected>Monat</option>
               <option value="Januar">Januar</option>
               <option value="Februar">Februar</option>
               <option value="März">März</option>
@@ -71,7 +91,8 @@
               <option value="November">November</option>
               <option value="Dezember">Dezember</option>
             </select>
-            <select name="year" id="year">
+            <select name="year" id="year" required>
+              <option value="" disabled selected>Jahr</option>
               <option value="2003">2003</option>
               <option value="2002">2002</option>
               <option value="2001">2001</option>
@@ -116,7 +137,7 @@
             </select>
           </div>
           <div class="color">
-            <p class="label">Farbauswahl</p>
+            <p class="label">Farbauswahl:</p>
             <div class="check">
               <input type="checkbox" id="color1" name="color1" value="color1" />
               <label for="color1"> Farbe 1</label>
@@ -135,8 +156,8 @@
             </div>
           </div>
           <div class="comment">
-            <p class="label">Anmerkung</p>
-            <textarea id="cmment" name="comment"></textarea>
+            <p class="label">Anmerkung:</p>
+            <textarea id="cmment" name="comment" required></textarea>
           </div>
           <input type="submit" value="Senden" />
         </form>
@@ -144,31 +165,55 @@
 
       <div class="right answers">
         <div class="gender">
-          <p class="label">Geschlecht: <span class="answer"></span></p>
+          <p class="label">Geschlecht: <span class="answer gender"></span></p>
         </div>
         <div class="name">
-          <p class="label">Name: <span class="answer"></span></p>
+          <p class="label">Name: <span class="answer name"></span></p>
         </div>
         <div class="birthdate">
-          <p class="label">Geburtsdatum: <span class="answer"></span></p>
+          <p class="label">
+            Geburtsdatum: <span class="answer day"></span
+            ><span class="answer month"> </span
+            ><span class="answer year"></span>
+          </p>
         </div>
         <div class="color">
-          <p class="label">Farbauswahl</p>
+          <p class="label">Farbauswahl:</p>
           <div class="check">
-            <input type="checkbox" id="color1" name="color1" value="color1" />
+            <input
+              type="checkbox"
+              class="answer color1"
+              name="color1"
+              value="color1"
+            />
           </div>
           <div class="check">
-            <input type="checkbox" id="color2" name="color2" value="color2" />
+            <input
+              type="checkbox"
+              class="answer color2"
+              name="color2"
+              value="color2"
+            />
           </div>
           <div class="check">
-            <input type="checkbox" id="color3" name="color3" value="color3" />
+            <input
+              type="checkbox"
+              class="answer color3"
+              name="color3"
+              value="color3"
+            />
           </div>
           <div class="check">
-            <input type="checkbox" id="color4" name="color4" value="color4" />
+            <input
+              type="checkbox"
+              class="answer color4"
+              name="color4"
+              value="color4"
+            />
           </div>
           <div class="comment">
-            <p class="label">Anmerkung</p>
-            <span class="answer"></span>
+            <p class="label">Anmerkung:</p>
+            <span class="answer comment"></span>
           </div>
         </div>
       </div>
