@@ -1,4 +1,4 @@
-h1,
+/* h1,
 h2,
 h3,
 p,
@@ -37,4 +37,8 @@ textarea {
 
 .left {
   margin-left: 23%;
+} */
+
+body{
+  margin: 20px;
 }

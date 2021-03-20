@@ -1,16 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
   <head>
+    <meta charset="UTF-8">
     <title>Titel</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Formular</h1>
+    <h1>Titel</h1>
     <div id="content" class="grid">
       <div class="left">
+        <h2>Formular</h2>
         <form id="form">
           <div class="gender">
-            <p class="label">Geschlecht</p>
+            <p class="label">Geschlecht:</p>
             <input
               type="radio"
               id="male"
@@ -37,7 +41,7 @@
             <label for="other">Divers</label>
           </div>
           <div class="name">
-            <p class="label">Name</p>
+            <p class="label">Name:</p>
             <input type="text" name="name" required />
           </div>
           <div class="birthdate">
@@ -164,6 +168,7 @@
       </div>
 
       <div class="right answers">
+        <h2>Angaben</h2>
         <div class="gender">
           <p class="label">Geschlecht: <span class="answer gender"></span></p>
         </div>
@@ -186,6 +191,7 @@
               name="color1"
               value="color1"
             />
+            <label for="color1"> Farbe 1</label>
           </div>
           <div class="check">
             <input
@@ -194,6 +200,7 @@
               name="color2"
               value="color2"
             />
+            <label for="color2"> Farbe 2</label>
           </div>
           <div class="check">
             <input
@@ -202,6 +209,7 @@
               name="color3"
               value="color3"
             />
+            <label for="color3"> Farbe 3</label>
           </div>
           <div class="check">
             <input
@@ -210,6 +218,7 @@
               name="color4"
               value="color4"
             />
+            <label for="color4"> Farbe 4</label>
           </div>
           <div class="comment">
             <p class="label">Anmerkung:</p>
